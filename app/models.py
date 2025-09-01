@@ -9,3 +9,12 @@ class FAQ(Base):
     answer = Column(Text, nullable=False)
     ai_response = Column(Text, nullable=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
+
+
+class Blog(Base):
+    __tablename__ = "blogs"
+
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String, nullable=False)
+    content = Column(Text, nullable=False)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())

@@ -30,3 +30,24 @@ class FAQResponse(FAQCreate):
 
     class Config:
         orm_mode = True
+
+        
+# --------- BLOGS ---------
+class BlogBase(BaseModel):
+    title: str
+    content: str
+
+class BlogCreate(BlogBase):
+    pass
+
+class Blog(BlogBase):
+    id: int
+    created_at: datetime
+
+    model_config = {"from_attributes": True}
+
+class BlogResponse(BlogBase):
+    id: int
+    created_at: datetime
+
+    model_config = {"from_attributes": True}
