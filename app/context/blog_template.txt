@@ -1,0 +1,26 @@
+# Blog Template
+
+Write the blog in **British English**. Use the following Strapi content structure:
+
+- title
+- description
+- slug
+- cover
+- author
+- category
+- blocks:
+    - excerpt
+    - content
+    - tags
+    - readingTime
+    - featured
+    - publishedDate
+
+Follow a structured flow:
+1. Introduce the FAQ question and answer.
+2. Include context information provided in the /context folder.
+3. Use the tone specified in ANCHOR.txt.
+4. Suggest relevant tags from the predefined list:
+   about, getting-started, features, community, privacy, pricing, partnerships, mission.
+
+Ensure the output is ready to save in Markdown or JSON for Strapi.
